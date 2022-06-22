@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<AssemblyName>SimplePdfConverter</AssemblyName>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>Images\Adobe-PDF-Export.ico</ApplicationIcon>
+		<PackageIcon>Adobe-PDF-Export.png</PackageIcon>
+		<PackageProjectUrl>https://gsoftwarelab.com/</PackageProjectUrl>
+		<Copyright>GSoftwareLab @ 2022</Copyright>
+		<Authors>GSoftwareLab</Authors>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Images\Document-Add.png" />
+		<None Remove="Images\Document-Settings-01.png" />
+		<None Remove="Images\DocumentExchange-WF.png" />
+		<None Remove="Images\Folder-Open-01.png" />
+		<None Remove="Images\Gear--03WF.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Images\Adobe-PDF-Export.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Syncfusion.DocToPDFConverter.Wpf" Version="20.1.0.55" />
+		<PackageReference Include="Syncfusion.Pdf.Wpf" Version="20.1.0.55" />
+		<PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="20.1.0.55" />
+		<PackageReference Include="Syncfusion.Shared.WPF" Version="20.1.0.55" />
+		<PackageReference Include="Syncfusion.Themes.FluentLight.WPF" Version="20.1.0.55" />
+		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Images\Adobe-PDF-Export.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\Document-Add.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\Document-Settings-01.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\DocumentExchange-WF.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\Folder-Open-01.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Images\Gear--03WF.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Images\Adobe-PDF-Export.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+</Project>
